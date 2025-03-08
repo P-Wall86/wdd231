@@ -17,7 +17,6 @@ body {
     background-color: white;
     overflow-x: hidden;
     font-family: "Red Hat Text", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
 }
@@ -59,7 +58,6 @@ header {
     width: 100%;
     display: flex;
     padding: 0.7rem;
-    margin: 0.5 rem;
     justify-content: center;
     background-color: var(--secondary-color);
 }

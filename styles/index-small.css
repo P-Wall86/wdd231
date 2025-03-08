@@ -5,7 +5,7 @@
 
    header {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
       position: relative;
    }
 
@@ -13,7 +13,7 @@
       flex-direction: row;
       padding: 1rem 2rem;
    }
-
+   
    .hamburger {
       display: flex;
       flex-direction: column;
@@ -76,6 +76,12 @@
       border-radius: 0.7rem;
    }
 
+   .nav a:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
+      transition: text-decoration 0.3s ease;
+  }
+
    .hamburger.active .hamburger-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px);
    }
@@ -129,5 +135,137 @@
 
    .footer p:nth-child(2) {
       font-size: x-large;
+   }
+}
+
+@media (max-width: 600px) {
+   header {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem;
+   }
+
+   .header {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem;
+   }
+
+   .header img {
+      max-width: 80px;
+      max-height: 80px;
+   }
+
+   .header span {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-align: center;
+   }
+
+   .hamburger {
+      width: 25px;
+      height: 20px;
+   }
+
+   .hamburger-line {
+      height: 3px;
+   }
+
+   .nav {
+      width: 100%;
+      height: 100vh;
+      right: -100%; 
+      padding: 20px 0;
+      overflow-y: auto;
+      background-color: var(--accent-color);
+   }
+
+   .nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 60px;
+   }
+
+   .nav li {
+      margin: 0.5rem 0;
+   }
+
+   .nav a {
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      display: block;
+      text-align: center;
+   }
+
+   .nav a.active {
+      color: var(--font-color);
+      border-left: 4px solid var(--primary-color);
+      padding-left: 0.5rem; 
+      font-weight: bold; 
+      width: auto; 
+      background-color: transparent; 
+   }
+
+   .close-menu {
+      top: 10px;
+      right: 10px;
+      font-size: 1.5rem;
+   }
+
+   main {
+      padding: 0.5rem;
+   }
+
+   h1 {
+      font-size: 1.5rem;
+   }
+
+   section h2 {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      font-weight: bold;
+   }
+
+   .course li {
+      font-size: 1.5rem;
+      margin: 0.5rem;
+   }
+
+   .place figure img {
+      width: 150px;
+      height: 150px;
+   }
+
+   .place figcaption {
+      font-size: 1rem;
+   }
+
+   .filter-buttons {
+      flex-direction: column;
+      gap: 0.5rem;
+   }
+
+   .filter-buttons button {
+      width: 100%;
+      padding: 0.5rem;
+   }
+
+   .course-buttons button {
+      font-size: 1rem;
+      padding: 0.5rem;
+   }
+
+   footer {
+      padding: 0.5rem;
+   }
+
+   .footer p {
+      font-size: 1.5rem;
+   }
+
+   .footer p:nth-child(2) {
+      font-size: 1rem;
    }
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <meta name="description" content="Index page for CSE 210 Web Frontend Development at BYU-Idaho" />
+    <meta name="author" content="Pamela Pared" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index-large.css" />
+    <link rel="stylesheet" href="styles/index-small.css" />
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="images/index.webp" alt="" width="90" height="95" loading=lazy>
+            <span>Pamela P. Pared</span>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <div class="overlay"></div>
+
+        <div class="nav">
+            <button class="close-menu" aria-label="Close menu">✕</button>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="course">
+            <h2>Course Work</h2>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section class="place">
+            <h2>Misiones, Argentina</h2>
+
+            <figure>
+                <img src="images/falls.webp" alt="Salto San Martín" width="200" height="200" loading="lazy">
+                <figcaption>Salto San Martín, Iguazu Falls</figcaption>
+            </figure>
+        </section>
+
+        <section class="cert-courses">
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="filter-buttons">
+                <button data-filter="all">All</button>
+                <button data-filter="CSE">CSE</button>
+                <button data-filter="WDD">WDD</button>
+            </div>
+
+            <div class="credits-message"></div>
+
+            <div class="course-buttons">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p><span id="currentyear"></span></p>
+            <p><span id="lastmodified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

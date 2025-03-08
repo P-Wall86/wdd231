@@ -69,13 +69,6 @@
       font-size: 1.2rem;
    }
 
-   .nav a.active {
-      background-color: var(--background-color);
-      width: 50%;
-      padding: 0.7rem;
-      border-radius: 0.7rem;
-   }
-
    .nav a:hover {
       text-decoration: underline;
       text-underline-offset: 0.5rem;

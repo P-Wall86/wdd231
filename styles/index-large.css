@@ -44,8 +44,8 @@ header {
 }
 
 .header img {
-    max-width: 90px;
-    max-height: 95px;
+    max-width: 100px;
+    max-height: 100px;
     box-shadow: white 0px 0px 5px;
 }
 

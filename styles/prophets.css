@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(170, 118, 22, 0.562);
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.404);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+img {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-weight: bold;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}

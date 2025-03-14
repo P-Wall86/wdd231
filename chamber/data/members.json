@@ -1,0 +1,113 @@
+[
+    {
+        "name": "Rose Petals Boutique",
+        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
+        "phone": "555-ROSE-1234",
+        "website": "http://www.rosepetalsboutique.com",
+        "image": "https://placehold.co/50x50",
+        "membership_level": 2,
+        "additional_info": {
+            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "social_media": {
+                "facebook": "https://www.facebook.com/rosepetalsboutique",
+                "instagram": "https://www.instagram.com/rosepetalsboutique"
+            }
+        }
+    },
+    {
+        "name": "Rose Petals Boutique",
+        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
+        "phone": "555-ROSE-1234",
+        "website": "http://www.rosepetalsboutique.com",
+        "image": "https://placehold.co/50x50",
+        "email": "rpboutique@domain.com",
+        "membership_level": 2,
+        "additional_info": {
+            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "social_media": {
+                "facebook": "https://www.facebook.com/rosepetalsboutique",
+                "instagram": "https://www.instagram.com/rosepetalsboutique"
+            }
+        }
+    },
+    {
+        "name": "Rose Petals Boutique",
+        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
+        "phone": "555-ROSE-1234",
+        "website": "http://www.rosepetalsboutique.com",
+        "image": "https://placehold.co/50x50",
+        "email": "rpboutique@domain.com",
+        "membership_level": 2,
+        "additional_info": {
+            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "social_media": {
+                "facebook": "https://www.facebook.com/rosepetalsboutique",
+                "instagram": "https://www.instagram.com/rosepetalsboutique"
+            }
+        }
+    },
+    {
+        "name": "Rose Petals Boutique",
+        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
+        "phone": "555-ROSE-1234",
+        "website": "http://www.rosepetalsboutique.com",
+        "image": "https://placehold.co/50x50",
+        "email": "rpboutique@domain.com",
+        "membership_level": 2,
+        "additional_info": {
+            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "social_media": {
+                "facebook": "https://www.facebook.com/rosepetalsboutique",
+                "instagram": "https://www.instagram.com/rosepetalsboutique"
+            }
+        }
+    },
+    {
+        "name": "Rose Petals Boutique",
+        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
+        "phone": "555-ROSE-1234",
+        "website": "http://www.rosepetalsboutique.com",
+        "image": "https://placehold.co/50x50",
+        "email": "rpboutique@domain.com",
+        "membership_level": 2,
+        "additional_info": {
+            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "social_media": {
+                "facebook": "https://www.facebook.com/rosepetalsboutique",
+                "instagram": "https://www.instagram.com/rosepetalsboutique"
+            }
+        }
+    },
+    {
+        "name": "Rose Petals Boutique",
+        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
+        "phone": "555-ROSE-1234",
+        "website": "http://www.rosepetalsboutique.com",
+        "image": "https://placehold.co/50x50",
+        "email": "rpboutique@domain.com",
+        "membership_level": 2,
+        "additional_info": {
+            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "social_media": {
+                "facebook": "https://www.facebook.com/rosepetalsboutique",
+                "instagram": "https://www.instagram.com/rosepetalsboutique"
+            }
+        }
+    },
+    {
+        "name": "Rose Petals Boutique",
+        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
+        "phone": "555-ROSE-1234",
+        "website": "http://www.rosepetalsboutique.com",
+        "image": "https://placehold.co/50x50",
+        "email": "rpboutique@domain.com",
+        "membership_level": 2,
+        "additional_info": {
+            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "social_media": {
+                "facebook": "https://www.facebook.com/rosepetalsboutique",
+                "instagram": "https://www.instagram.com/rosepetalsboutique"
+            }
+        }
+    }
+]

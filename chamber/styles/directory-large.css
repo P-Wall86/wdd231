@@ -9,7 +9,7 @@
     --secondary-font: "Quicksand", sans-serif;
 
     --primary-color:#1E3D2B;
-    --secondary-color: #FF6F61;
+    --secondary-color: #FFD700;
     --background-color: #b2beb58a;
 }
 
@@ -112,13 +112,19 @@ ul.links {
 }
 
 ul.links a:hover {
-    transform: translateY(-3px);
-    color: #FFD700
+        transform: translateY(-3px);
+        color: var(--primary-color); /* Dark green for better contrast */
+        background-color: var(--secondary-color); /* Light yellow background */
+        padding: 0.5rem 0.7rem; /* Add padding for better click area */
+        border-radius: 4px; /* Optional: Add rounded corners */
 }
 
 .links li.active a {
-    border-bottom: 3px solid #FFD700;
-    color: #FFD700;
+    border-bottom: 3px solid var(--secondary-color);
+    color: var(--primary-color); /* Dark green for better contrast */
+    background-color: var(--secondary-color); /* Light yellow background */
+    padding: 0.5rem 0.7rem; /* Add padding for better click area */
+    border-radius: 4px; /* Optional: Add rounded corners */
 }
 
 /* HEADER ENDS HERE */

@@ -53,6 +53,11 @@
         background-color: black;
     }
 
+    ul.links a:hover {
+        margin: 0 auto;
+        width: 50%;
+    }
+
     .links li.active a {
         margin: 0 auto;
         width: 50%;

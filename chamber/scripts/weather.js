@@ -58,13 +58,8 @@ function displayCurrentWeather(data) {
 
     currentWeatherDiv.innerHTML = ""
 
-    const weatherIcon = document.createElement("img");
-    weatherIcon.src = iconUrl;
-    weatherIcon.alt = weather.description;
-    weatherIcon.width = 282;
-    weatherIcon.height = 282;
-    currentWeatherDiv.appendChild(weatherIcon);
-
+    const customSVG = `<img src="images/weather.svg" alt="Weather Icon" width="100" height="100">`;
+    currentWeatherDiv.innerHTML += customSVG;
 
     const weatherDetails = document.createElement("div");
     weatherDetails.innerHTML = `

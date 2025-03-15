@@ -252,20 +252,18 @@ h1 {
 
 .weather-icon {
     position: absolute;
-    top: 0.7rem;
-    left: 0.5rem;
-    background-color: var(--background-color);
-    border-radius: 30%;
+    top: 5px;
+    left: 5px;
 }
 
 .weather-icon img {
-    width: 125px;
-    height: 125px;
+    width: 188px;
+    height: 188px;
 }
 
 #current-weather p {
     margin-top: 0.5rem;
-    padding-left: 150px;
+    padding-left: 200px;
     text-align: center;
     font-size: 1.2rem;
 }

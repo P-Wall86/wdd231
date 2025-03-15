@@ -60,13 +60,13 @@ function displayCurrentWeather(data) {
         <div class="weather-icon">
             <img src="${iconUrl}" alt="${weather.description}">
         </div>
-        <p>${main.temp}°C</p>
+        <p><strong>${main.temp}°</strong> C</p>
         <p>${weather.description}</p>
-        <p><strong>High:</strong> ${main.temp_max}°C</p>
-        <p><strong>Low:</strong> ${main.temp_min}°C</p>
-        <p><strong>Humidity:</strong> ${main.humidity}%</p>
-        <p><strong>Sunrise:</strong> ${sunriseTime}</p>
-        <p><strong>Sunset:</strong> ${sunsetTime}</p>
+        <p>High: ${main.temp_max}°C</p>
+        <p>Low: ${main.temp_min}°C</p>
+        <p>Humidity: ${main.humidity}%</p>
+        <p>Sunrise: ${sunriseTime}</p>
+        <p>Sunset: ${sunsetTime}</p>
     `;
     currentWeatherDiv.innerHTML = html;
 }
@@ -111,7 +111,7 @@ function displayWeatherForecast(data) {
 
         html += `
             <div class="forecast-item">
-                <p><strong>${dayName}:</strong> ${main.temp}°C</p>
+                <p>${dayName}: <strong>${main.temp}°C</strong></p>
             </div>
         `;
     }

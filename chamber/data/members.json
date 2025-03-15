@@ -1,112 +1,120 @@
 [
     {
-        "name": "Rose Petals Boutique",
-        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
-        "phone": "555-ROSE-1234",
-        "website": "http://www.rosepetalsboutique.com",
-        "image": "https://placehold.co/50x50",
+        "name": "Roma Furniture Store",
+        "tagline": "Furnishing your dreams",
+        "address": "2145 Hydrangea St., Flower City, FL 5432, AR",
+        "phone": "123-4567-890",
+        "website": "http://www.romafurniture.com",
+        "image": "images/couch.svg",
+        "email": "spqr@flwcity.com",
         "membership_level": 2,
         "additional_info": {
-            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "description": "A furniture store offering stylish and functional home essentials.",
             "social_media": {
-                "facebook": "https://www.facebook.com/rosepetalsboutique",
-                "instagram": "https://www.instagram.com/rosepetalsboutique"
+                "facebook": "https://www.facebook.com/roma-furniture-store",
+                "instagram": "https://www.instagram.com/spqr_store"
             }
         }
     },
     {
-        "name": "Rose Petals Boutique",
-        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
-        "phone": "555-ROSE-1234",
-        "website": "http://www.rosepetalsboutique.com",
-        "image": "https://placehold.co/50x50",
-        "email": "rpboutique@domain.com",
-        "membership_level": 2,
+        "name": "Las Rosas Supermarket",
+        "tagline": "Quality you can taste",
+        "address": "2067 Peony Blvd., Flower City, FL 5432, AR",
+        "phone": "456-7123-890",
+        "website": "http://www.peiyongan.com",
+        "image": "images/open24.svg",
+        "email": "peiyongan@flwcity.com",
+        "membership_level": 3,
         "additional_info": {
-            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "description": "A full-service supermarket providing fresh produce and everyday groceries.",
             "social_media": {
-                "facebook": "https://www.facebook.com/rosepetalsboutique",
-                "instagram": "https://www.instagram.com/rosepetalsboutique"
+                "facebook": "https://www.facebook.com/peiyonganmkt",
+                "instagram": "https://www.instagram.com/peiyongan_flw"
             }
         }
     },
     {
-        "name": "Rose Petals Boutique",
-        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
-        "phone": "555-ROSE-1234",
-        "website": "http://www.rosepetalsboutique.com",
-        "image": "https://placehold.co/50x50",
-        "email": "rpboutique@domain.com",
+        "name": "The Corner of Deals",
+        "tagline": "Your Go-To Spot for Savings",
+        "address": "2180 Lavender St., Flower City, FL 5432, AR",
+        "phone": "123-4895-067",
+        "website": "http://www.cornerofdeals.com",
+        "image": "images/veggies.svg",
+        "email": "frtvegdealer@flwcity.com",
         "membership_level": 2,
         "additional_info": {
-            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "description": "A discount store featuring unbeatable prices on a wide range of products.",
             "social_media": {
-                "facebook": "https://www.facebook.com/rosepetalsboutique",
-                "instagram": "https://www.instagram.com/rosepetalsboutique"
+                "facebook": "https://www.facebook.com/cornerofdealsveg",
+                "instagram": "https://www.instagram.com/dealscorner"
             }
         }
     },
     {
-        "name": "Rose Petals Boutique",
-        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
-        "phone": "555-ROSE-1234",
-        "website": "http://www.rosepetalsboutique.com",
-        "image": "https://placehold.co/50x50",
-        "email": "rpboutique@domain.com",
-        "membership_level": 2,
+        "name": "Rosaura Stationery Store",
+        "tagline": "Where Ideas Take Shape",
+        "address": "2105 Orchid Ave., Flower City, FL 5432, AR",
+        "phone": "890-4567-123",
+        "website": "http://www.rosaurastore.com",
+        "image": "images/stationery.svg",
+        "email": "rosaurass@flwcity.com",
+        "membership_level": 3,
         "additional_info": {
-            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "description": "A stationery shop specializing in school, office, and art supplies.",
             "social_media": {
-                "facebook": "https://www.facebook.com/rosepetalsboutique",
-                "instagram": "https://www.instagram.com/rosepetalsboutique"
+                "facebook": "https://www.facebook.com/rosauras_store",
+                "instagram": "https://www.instagram.com/rosaurashop"
             }
         }
     },
     {
-        "name": "Rose Petals Boutique",
-        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
-        "phone": "555-ROSE-1234",
-        "website": "http://www.rosepetalsboutique.com",
-        "image": "https://placehold.co/50x50",
-        "email": "rpboutique@domain.com",
-        "membership_level": 2,
+        "name": "NEA Agro Services",
+        "tagline": "Growing Success Together",
+        "address": "2043 Dahlia St., Flower City, FL 5432, AR",
+        "phone": "123-8904-567",
+        "website": "http://www.neagriservice.com",
+        "image": "images/harvest.svg",
+        "email": "neagrserv@flwcity.com",
+        "membership_level": 3,
         "additional_info": {
-            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "description": "An agricultural service provider supporting farmers with tools and expertise.",
             "social_media": {
-                "facebook": "https://www.facebook.com/rosepetalsboutique",
-                "instagram": "https://www.instagram.com/rosepetalsboutique"
+                "facebook": "https://www.facebook.com/nea_agrserv",
+                "instagram": "https://www.instagram.com/neagrserv"
             }
         }
     },
     {
-        "name": "Rose Petals Boutique",
-        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
-        "phone": "555-ROSE-1234",
-        "website": "http://www.rosepetalsboutique.com",
-        "image": "https://placehold.co/50x50",
-        "email": "rpboutique@domain.com",
-        "membership_level": 2,
+        "name": "All Natural",
+        "tagline": "Healthy Living Starts Here",
+        "address": "2541 Sunflower St., Flower City, FL 5432, AR",
+        "phone": "890-123-4567",
+        "website": "http://www.allnaturalflw.com",
+        "image": "images/leaves.svg",
+        "email": "allnatural@flwcity.com",
+        "membership_level": 3,
         "additional_info": {
-            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "description": "A health store offering natural and diet-friendly food products.",
             "social_media": {
-                "facebook": "https://www.facebook.com/rosepetalsboutique",
-                "instagram": "https://www.instagram.com/rosepetalsboutique"
+                "facebook": "https://www.facebook.com/allnat",
+                "instagram": "https://www.instagram.com/allnat"
             }
         }
     },
     {
-        "name": "Rose Petals Boutique",
-        "address": "123 Blossom Lane, Flower City, FL 12345, Flowerland",
-        "phone": "555-ROSE-1234",
-        "website": "http://www.rosepetalsboutique.com",
-        "image": "https://placehold.co/50x50",
-        "email": "rpboutique@domain.com",
-        "membership_level": 2,
+        "name": "Evo Fitness Center",
+        "tagline": "Transform Your Body and Mind",
+        "address": "2276 Tulip St., Flower City, FL 5432, AR",
+        "phone": "459-7862-103",
+        "website": "http://www.evofitflw.com",
+        "image": "images/gym.svg",
+        "email": "evofit@flwcity.com",
+        "membership_level": 1,
         "additional_info": {
-            "description": "A boutique specializing in floral arrangements and custom flower gifts.",
+            "description": "A modern fitness center focused on personal training and wellness.",
             "social_media": {
-                "facebook": "https://www.facebook.com/rosepetalsboutique",
-                "instagram": "https://www.instagram.com/rosepetalsboutique"
+                "facebook": "https://www.facebook.com/evofit87",
+                "instagram": "https://www.instagram.com/evofit87"
             }
         }
     }

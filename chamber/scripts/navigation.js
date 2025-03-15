@@ -24,3 +24,15 @@ backToTopButton.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+const links = document.querySelectorAll('.links a');
+
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        links.forEach(link => link.parentElement.classList.remove('active'));
+
+        link.parentElement.classList.add('active');
+    });
+});

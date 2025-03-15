@@ -45,11 +45,11 @@ function generateCards(data) {
         cardInfo.classList.add("card-info");
 
         const email = document.createElement("p");
-        email.textContent = `Email: ${item.email || "rsboutique@domain.com"}`;
+        email.innerHTML = `<strong>Email</strong>: ${item.email || "rsboutique@domain.com"}`;
         cardInfo.appendChild(email);
 
         const phone = document.createElement("p");
-        phone.textContent = `Phone: ${item.phone}`;
+        phone.innerHTML = `<strong>Phone:</strong> ${item.phone}`;
         cardInfo.appendChild(phone);
 
         const website = document.createElement("a");

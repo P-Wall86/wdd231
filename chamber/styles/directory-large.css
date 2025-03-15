@@ -217,8 +217,7 @@ h1 {
 
 .section-container section ul {
     list-style-position: inside;
-    padding-left: 0;
-    margin: 0; 
+    padding-left: 0; 
 }
 
 .section-container section li {
@@ -248,24 +247,26 @@ h1 {
 
 #current-weather {
     position: relative;
+    text-align: center;
+    padding-top: 0.5rem;
 }
 
-.weather-icon {
-    position: absolute;
-    top: 5px;
-    left: 5px;
+#current-weather img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 30%;
+    margin-bottom: 0;
 }
 
-.weather-icon img {
-    width: 188px;
-    height: 188px;
+#current-weather div {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
 #current-weather p {
-    margin-top: 0.5rem;
-    padding-left: 200px;
-    text-align: center;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 /* CARDS SECTION GRID DEFAULT VIEW STARTS HERE */

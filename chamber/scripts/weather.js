@@ -50,16 +50,24 @@ function displayCurrentWeather(data) {
     const main = data.main;
     const sys = data.sys;
 
-    
+
     const sunriseTime = new Date(sys.sunrise * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
     const sunsetTime = new Date(sys.sunset * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
     const iconUrl = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
 
-    const html = `
-        <div class="weather-icon">
-            <img src="${iconUrl}" alt="${weather.description}">
-        </div>
+    currentWeatherDiv.innerHTML = ""
+
+    const weatherIcon = document.createElement("img");
+    weatherIcon.src = iconUrl;
+    weatherIcon.alt = weather.description;
+    weatherIcon.width = 282;
+    weatherIcon.height = 282;
+    currentWeatherDiv.appendChild(weatherIcon);
+
+
+    const weatherDetails = document.createElement("div");
+    weatherDetails.innerHTML = `
         <p><strong>${main.temp}°</strong> C</p>
         <p>${weather.description}</p>
         <p>High: ${main.temp_max}°C</p>
@@ -68,7 +76,7 @@ function displayCurrentWeather(data) {
         <p>Sunrise: ${sunriseTime}</p>
         <p>Sunset: ${sunsetTime}</p>
     `;
-    currentWeatherDiv.innerHTML = html;
+    currentWeatherDiv.appendChild(weatherDetails);
 }
 
 function displayWeatherForecast(data) {

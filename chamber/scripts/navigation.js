@@ -34,6 +34,7 @@ function setActiveLink() {
 
     links.forEach(link => {
         const linkPage = link.getAttribute("href");
+
         if (linkPage === currentPage) {
             link.parentElement.classList.add("active");
         } else {

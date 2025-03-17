@@ -10,6 +10,6 @@ viewToggle.addEventListener("click", () => {
     } else {
 
         cardsSection.classList.add("list-view");
-        viewToggle.innerHTML = "L";
+        viewToggle.innerHTML = "☷";
     }
 });

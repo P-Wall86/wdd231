@@ -63,16 +63,18 @@
         width: 50%;
     }
 
-    #view-toggle {
-        top: 38px;
-        right: 40px;
-    }
-
     /* MAIN */
     main {
         max-width: 100%;
         padding: 0;
     }
+
+    #view-toggle {
+        top: auto;
+        right: auto;
+        font-size: 1.8rem;
+    }
+
 
     /* HERO */
     .hero {

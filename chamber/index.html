@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower City - Chamber of Commerce</title>
+    <meta name="description" content="Landing page for Flower City Chamber of Commerce.">
+    <meta name="author" content="Pamela P. Pared">
+    <meta property="og:title" content="Flower City Chamber of Commerce Landing Page">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://p-wall86.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://p-wall86.github.io/wdd231/chamber/images/costa-large.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="preload" href="images/costa-large.webp" as="image">
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/gridlist.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="../flwcity.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Red+Hat+Text:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/city.webp" alt="logo" loading="lazy">
+            <div class="text">
+                <p class="line1">Flower City</p>
+                <p class="line2">Chamber of Commerce</p>
+            </div>
+            <button id="burger" aria-label="Toggle navigation menu"></button>
+        </div>
+    </header>
+    <nav id="dish">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <img src="images/sign-600.webp" srcset="images/sign-600.webp 600w,
+                        images/sign-800.webp 800w,
+                        images/sign-1200.webp 1200w,
+                        images/sign-2000.webp 2000w"
+                sizes="(max-width: 600px) 100vw, (max-width: 800px) 80vw, (max-width: 1200px) 60vw, 1200px"
+                alt="Paper being signed by somebody joining the chamber" class="hero-img" fetchpriority="high"
+                loading="eager">
+            <div class="hero-text">
+                <h1>Connect, Grow, Expand</h1>
+                <ul>
+                    <li>Networking opportunities</li>
+                    <li>Business resources and support</li>
+                    <li>Increased visibility and credibility</li>
+                </ul>
+                <button class="cta-button">Join us!</button>
+            </div>
+        </div>
+
+
+        <h2>Welcome to Our Community</h2>
+
+        <div class="section-container">
+            <section>
+                <h2>Events</h2>
+                <ul>
+                    <li>03/16 - St. Patrick's Festival</li>
+                    <li>03/24 - Day of Remembrance for Truth and Justice</li>
+                    <li>03/31 - 'Hug a Coder' Day</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Current Weather</h2>
+                <div id="current-weather">
+                </div>
+            </section>
+
+            <section>
+                <h2>Weather Forecast</h2>
+                <div id="weather-forecast">
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <h2>Our members</h2>
+            <button id="view-toggle">▦</button>
+        </section>
+
+        <div class="cards-container">
+            <section id="json-cards-section"></section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="left-section">
+                <p><strong>City Chamber of Commerce</strong></p>
+                <p>Address Line 1</p>
+                <p>Address Line 2</p>
+                <p>email@example.com</p>
+                <p>+123 456 7890</p>
+            </div>
+
+            <div class="center-section">
+                <img src="images/youtube.svg" alt="youtube" width="50" height="50" loading="lazy">
+                <img src="images/x_icon.svg" alt="x_twitter" width="50" height="50" loading="lazy">
+                <img src="images/linkedin.svg" alt="linkedin" width="50" height="50" loading="lazy">
+            </div>
+
+            <div class="right-section">
+                <p>WDD231 Class Project</p>
+                <p>Pamela Pared</p>
+                <p><span id="currentyear"></span></p>
+                <p><span id="lastmodified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top">↑</button>
+</body>
+
+</html>

@@ -25,14 +25,21 @@ backToTopButton.addEventListener("click", () => {
     });
 });
 
+
+//ACTIVE
 const links = document.querySelectorAll('.links a');
 
-links.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
+function setActiveLink() {
+    const currentPage = window.location.pathname.split("/").pop();
 
-        links.forEach(link => link.parentElement.classList.remove('active'));
-
-        link.parentElement.classList.add('active');
+    links.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+            link.parentElement.classList.add("active");
+        } else {
+            link.parentElement.classList.remove("active");
+        }
     });
-});
+}
+
+setActiveLink();

@@ -109,8 +109,16 @@
     }
 
     /*SECTION CONTAINER*/
+    h2 {
+        text-align: center;
+    }
+
     .section-container {
         flex-direction: column;
+    }
+
+    .section-container + section {
+        justify-content: center;
     }
 
     .forecast-item {
@@ -131,31 +139,6 @@
     .card {
         width: 95%;
         margin: 0 auto;
-    }
-
-    #json-cards-section.list-view .card{    
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        align-items: center;
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    #json-cards-section.list-view .card h3 {
-        grid-column: 1 / 2;
-        margin: 0;
-    }
-
-    #json-cards-section.list-view .card .card-content {
-        grid-column: 2 / 4;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    #json-cards-section.list-view .card .description {
-        display: none;
     }
 
     /* FOOTER */

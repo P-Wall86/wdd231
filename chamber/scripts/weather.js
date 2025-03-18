@@ -46,7 +46,6 @@ function displayCurrentWeather(data) {
         return;
     }
 
-    const weather = data.weather[0];
     const main = data.main;
     const sys = data.sys;
 
@@ -54,7 +53,9 @@ function displayCurrentWeather(data) {
     const sunriseTime = new Date(sys.sunrise * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
     const sunsetTime = new Date(sys.sunset * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 
-    const iconUrl = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
+    const weatherDescriptions = data.weather
+        .map(event => event.description.charAt(0).toUpperCase() + event.description.slice(1))
+        .join(", ");
 
     currentWeatherDiv.innerHTML = ""
 
@@ -63,13 +64,13 @@ function displayCurrentWeather(data) {
 
     const weatherDetails = document.createElement("div");
     weatherDetails.innerHTML = `
-        <p><strong>${main.temp}°</strong> C</p>
-        <p>${weather.description}</p>
-        <p>High: ${main.temp_max}°C</p>
-        <p>Low: ${main.temp_min}°C</p>
-        <p>Humidity: ${main.humidity}%</p>
-        <p>Sunrise: ${sunriseTime}</p>
-        <p>Sunset: ${sunsetTime}</p>
+        <p><strong>${main.temp.toFixed(0)}°</strong> C</p>
+        <p>${weatherDescriptions}</p>
+        <p><strong>High</strong>: ${main.temp_max.toFixed(0)}°C</p>
+        <p><strong>Low</strong>: ${main.temp_min.toFixed(0)}°C</p>
+        <p><strong>Humidity</strong>: ${main.humidity}%</p>
+        <p><strong>Sunrise</strong>: ${sunriseTime}</p>
+        <p><strong>Sunset</strong>: ${sunsetTime}</p>
     `;
     currentWeatherDiv.appendChild(weatherDetails);
 }
@@ -114,7 +115,7 @@ function displayWeatherForecast(data) {
 
         html += `
             <div class="forecast-item">
-                <p>${dayName}: <strong>${main.temp}°C</strong></p>
+                <p>${dayName}: <strong>${main.temp.toFixed(0)}°C</strong></p>
             </div>
         `;
     }

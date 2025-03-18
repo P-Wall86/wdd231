@@ -1,23 +1,21 @@
+//FETCHING JSON
 fetch('./data/members.json')
     .then(response => response.json())
     .then(data => {
         console.log(data);
-        // Filter Silver and Gold members (membership_level 2 or 3)
         const silverGoldMembers = data.filter(member => member.membership_level === 2 || member.membership_level === 3);
-        // Randomize and select a subset of members (e.g., 2 members)
         const randomMembers = getRandomMembers(silverGoldMembers, 2);
-        // Generate cards for the randomized members
         generateCards(randomMembers);
     })
     .catch(error => console.error('Error fetching JSON:', error));
 
-// FUNCTION TO GET RANDOM MEMBERS
+//RANDOM
 function getRandomMembers(members, count) {
     const shuffled = members.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
 }
 
-// CARDS GENERATOR (unchanged)
+//CARDS GENERATOR
 function generateCards(data) {
     const cardsSection = document.getElementById("json-cards-section");
 

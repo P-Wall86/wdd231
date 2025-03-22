@@ -11,6 +11,7 @@
     --primary-color:#1E3D2B;
     --secondary-color: #FFD700;
     --background-color: #b2beb58a;
+    --featured-color: #FFF4C2;
 }
 
 
@@ -107,7 +108,6 @@ ul.links a:hover {
 }
 
 .links li.active a {
-    border-bottom: 3px solid var(--secondary-color);
     color: var(--primary-color); 
     background-color: var(--secondary-color); 
     padding: 0.5rem 0.7rem; 
@@ -126,6 +126,8 @@ main {
 
 main h2 {
     font-family: var(--primary-font);
+    padding: 1rem 0 0;
+    border-top: 2px solid var(--primary-color);
 }
 
 /* HERO IMAGE STARTS HERE */
@@ -209,7 +211,7 @@ main h2 {
     display: flex;
     gap: 0.7rem;
     padding: 0.7rem;
-    padding-bottom: 0;
+    padding-bottom: 1.5rem;
 }
 
 .section-container h2 {
@@ -234,10 +236,14 @@ main h2 {
     padding-left: 0; 
 }
 
+.section-container section ul p {
+    font-weight: bold;
+}
+
 .section-container section li {
     padding: 0.5rem 0.7rem;
     font-size: 1.2rem;
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid var(--primary-color); 
 }
 
 .section-container section li:last-child {
@@ -324,7 +330,7 @@ main h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
     margin-top: 0.5rem;
-    background-color: var(--background-color);
+    background-color: var(--featured-color);
 }
 
 .card:hover {

@@ -103,14 +103,14 @@ ul.links a:hover {
         transform: translateY(-3px);
         color: var(--primary-color); 
         background-color: var(--secondary-color);
-        padding: 0.2rem; 
+        padding: 0.5rem; 
         border-radius: 4px; 
 }
 
 .links li.active a {
     color: var(--primary-color); 
     background-color: var(--secondary-color); 
-    padding: 0.5rem 0.7rem; 
+    padding: 0.5rem; 
     border-radius: 4px;
 }
 

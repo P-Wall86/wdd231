@@ -85,8 +85,8 @@ header {
 }
 
 .nav a.active {
-    color: var(--font-color); 
-    border-left: 4px solid var(--primary-color); 
+    color: var(--font-color);
+    border-left: 4px solid var(--primary-color);
     padding-left: 0.5rem;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -247,6 +247,47 @@ section h2 {
     border-radius: 0.7rem;
     font-size: x-large;
     font-weight: 500;
+}
+
+/* DIALOG STARTS */
+#course-details {
+    border: none;
+    border-radius: 0.7rem;
+    background-color: var(--background-color);
+    width: 50%;
+}
+
+.dialog-header {
+    display: grid;
+    grid-template-columns: auto 50px;
+    background-color: var(--primary-color);
+    border-radius: 0.7rem;
+}
+
+.dialog-header h3 {
+    grid-column: 1;
+    font-size: x-large;
+    text-align: center;
+}
+
+.close-dialog {
+    grid-column: 2;
+    background-color: var(--background-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--font-color);
+    margin: 0.6rem 0.3rem;
+}
+
+.dialog-body {
+    font-size: 1.2rem;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
 }
 
 footer {

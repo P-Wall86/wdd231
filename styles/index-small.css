@@ -250,6 +250,10 @@
       padding: 0.5rem;
    }
 
+   #course-details {
+      width: 80%;
+   }
+
    footer {
       padding: 0.5rem;
    }

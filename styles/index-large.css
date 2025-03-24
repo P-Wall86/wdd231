@@ -249,7 +249,7 @@ section h2 {
     font-weight: 500;
 }
 
-/* DIALOG STARTS */
+/* DIALOG STARTS HERE */
 #course-details {
     border: none;
     border-radius: 0.7rem;
@@ -288,6 +288,38 @@ section h2 {
 
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.5);
+}
+
+/* ANIMATION STARTS HERE */
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#course-details {
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
+dialog::backdrop {
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 footer {

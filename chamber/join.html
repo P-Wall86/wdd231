@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/join-small.css">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <link rel="icon" type="image/x-icon" href="../flwcity.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,8 +50,49 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="app-container">
+        <div class="application">
+            <h2>Membership Application</h2>
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname" title="Please enter your first name" required
+                autocomplete="given-name">
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname" title="Please enter your last name" required
+                autocomplete="family-name">
+            <label for="orgtitle">Title:</label>
+            <input type="text" id="orgtitle" name="orgtitle"
+                title="Please enter your organizational title (letters, hyphens, or spaces only, min 7 characters)"
+                required autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,16}$">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                title="Please enter a valid email address (e.g., name@example.com)" required autocomplete="email"
+                placeholder="name@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone"
+                title="Please enter a valid phone number (e.g., +1234567890 or 123-456-7890)" required
+                autocomplete="tel" placeholder="+1 (123) 456-7890">
+            <label for="orgname">Organization name:</label>
+            <input type="text" id="orgname" name="orgname" title="Please enter your organization's full legal name"
+                required autocomplete="organization" placeholder="E.g.: Stark Industries">
+            <label for="membership">Membership level:</label>
+            <select id="membership" name="membership" required title="Select your membership tier">
+                <option value="" disabled selected>-- Select Membership --</option>
+                <option value="np">Non-Profit Membership</option>
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+            </select>
+            <label for="description">Business description:</label>
+            <textarea id="description" name="business_description"
+                title="Briefly describe your organization's purpose and activities" rows="5"
+                placeholder="Example: We're a non-profit supporting local artists through community workshops..."></textarea>
 
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+            <button type="submit" class="submit-btn">I want to be a member</button>
+        </div>
+
+        <div class="cards"></div>
     </main>
 
     <footer>

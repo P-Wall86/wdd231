@@ -69,6 +69,15 @@
         padding: 0;
     }
 
+    .app-container {
+        flex-direction: column;
+    }
+
+    .application,
+    .cards {
+        max-width: 100%;
+    }
+
     /* FOOTER */
     .footer {
         display: flex;

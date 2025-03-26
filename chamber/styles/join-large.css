@@ -8,7 +8,7 @@
     --primary-font: "Cinzel", serif;
     --secondary-font: "Quicksand", sans-serif;
 
-    --primary-color:#1E3D2B;
+    --primary-color: #1E3D2B;
     --secondary-color: #FFD700;
     --background-color: #b2beb58a;
     --featured-color: #FFF4C2;
@@ -100,24 +100,61 @@ ul.links {
 }
 
 ul.links a:hover {
-        transform: translateY(-3px);
-        color: var(--primary-color); 
-        background-color: var(--secondary-color);
-        padding: 0.5rem; 
-        border-radius: 4px; 
+    transform: translateY(-3px);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 4px;
 }
 
 .links li.active a {
-    color: var(--primary-color); 
-    background-color: var(--secondary-color); 
-    padding: 0.5rem; 
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
     border-radius: 4px;
 }
 
 /* HEADER ENDS HERE */
 
 /* MAIN STARTS HERE */
+.app-container {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
 
+.application {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.application label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: -8px;
+    padding-left: 4px;
+}
+
+.application input,
+.application textarea,
+.application select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.cards {
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
 
 /* MAIN ENDS HERE */
 

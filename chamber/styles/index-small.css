@@ -69,12 +69,6 @@
         padding: 0;
     }
 
-    #view-toggle {
-        top: auto;
-        right: auto;
-        font-size: 1.8rem;
-    }
-
     /* HERO */
     .hero {
         max-height: 350px;

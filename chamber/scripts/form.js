@@ -7,5 +7,9 @@ document.querySelector("#orgtitle").addEventListener("input", function () {
     }
 });
 document.querySelector("#orgtitle").addEventListener("invalid", function () {
-    this.setCustomValidity("Org title must be at least 7 letters, hyphens, or spaces (no numbers/symbols).");
+    this.setCustomValidity(
+        "Org title must be at least 7 letters, hyphens, or spaces (no numbers/symbols)."
+    );
 });
+
+

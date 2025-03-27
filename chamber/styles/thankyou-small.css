@@ -78,10 +78,6 @@
         max-width: 100%;
     }
 
-    .close-modal {
-        right: 10%;
-    }
-
     /* FOOTER */
     .footer {
         display: flex;

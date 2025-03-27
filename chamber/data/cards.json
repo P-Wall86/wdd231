@@ -1,0 +1,45 @@
+[
+    {
+        "id": "np",
+        "title": "Non-Profit",
+        "cost": "$0",
+        "benefits": [
+            "Access to member directory",
+            "Monthly newsletter",
+            "Basic training webinars"
+        ]
+    },
+    {
+        "id": "bronze",
+        "title": "Bronze",
+        "cost": "$100/year",
+        "benefits": [
+            "All NP benefits",
+            "10% event discounts",
+            "2 spotlight ads/year"
+        ]
+    },
+    {
+        "id": "silver",
+        "title": "Silver",
+        "cost": "$250/year",
+        "benefits": [
+            "All Bronze benefits",
+            "15% event discounts",
+            "4 spotlight ads/year",
+            "Exclusive networking events"
+        ]
+    },
+    {
+        "id": "gold",
+        "title": "Gold",
+        "cost": "$500/year",
+        "benefits": [
+            "All Silver benefits",
+            "20% event discounts",
+            "Unlimited spotlight ads",
+            "Priority home page placement",
+            "Free annual training session"
+        ]
+    }
+]

@@ -14,7 +14,6 @@
     --featured-color: #FFF4C2;
 }
 
-
 body {
     font-family: var(--secondary-font);
 }
@@ -144,7 +143,7 @@ ul.links a:hover {
 .application select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -154,6 +153,17 @@ ul.links a:hover {
     display: grid;
     gap: 1rem;
     align-content: start;
+}
+
+button.submit-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    max-width: 600px;
 }
 
 /* MAIN ENDS HERE */
@@ -237,4 +247,149 @@ footer {
 #back-to-top:hover {
     background-color: var(--primary-color);
     color: white
+}
+
+/* MEMBERSHIP CARDS AND MODAL START HERE */
+
+#modal {
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-out;
+}
+
+#modal-content {
+    margin-bottom: 1rem;
+    font-size: large;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    margin: -1.5rem;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.close-modal {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    transform: translateY(-50%) scale(1.1);
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.benefits-list li {
+    background: rgba(0, 0, 0, 0.03);
+    padding: 0.8rem;
+    border-radius: 6px;
+    list-style: none;
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+article.card {
+    border: 2px var(--primary-color) solid;
+    margin-top: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: var(--background-color);
+}
+
+article.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button.learn-more {
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+main h2 {
+    font-family: var(--primary-font);
+    padding: 1rem 0 0;
+    border-top: 2px solid var(--primary-color);
+}
+
+.learn-more {
+    margin: 1rem;
 }

@@ -393,3 +393,13 @@ main h2 {
 .learn-more {
     margin: 1rem;
 }
+
+/* REQUIRED FIELDS */
+input:required {
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+input:required:focus {
+    border-bottom-color: var(--primary-color);
+}

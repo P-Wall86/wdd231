@@ -52,7 +52,7 @@
     </nav>
 
     <main class="app-container">
-        <form action="thankyou.html" method="get" id="membership-form" novalidate>
+        <form action="thankyou.html" method="get" id="membership-form" onsubmit="return confirm('Did you complete ALL required fields?')">
         <div class="application">
             <h2>Membership Application</h2>
             <label for="firstname">First name:</label>
@@ -64,11 +64,11 @@
             <label for="orgtitle">Title:</label>
             <input type="text" id="orgtitle" name="orgtitle"
                 title="Please enter your organizational title (letters, hyphens, or spaces only, min 7 characters)"
-                required autocomplete="organization-title" pattern="^[A-Za-z\x20-]{7,16}$">
+                autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,16}$">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email"
                 title="Please enter a valid email address (e.g., name@example.com)" required autocomplete="email"
-                placeholder="name@example.com" pattern="[a-zA-Z0-9.%_+\x2D]+@[a-zA-Z0-9.\x2D]+\.[a-zA-Z]{2,}$">
+                placeholder="name@example.com">
             <label for="phone">Phone number:</label>
             <input type="tel" id="phone" name="phone"
                 title="Please enter a valid phone number (e.g., +1234567890 or 123-456-7890)" required

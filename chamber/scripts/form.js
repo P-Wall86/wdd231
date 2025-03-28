@@ -11,5 +11,3 @@ document.querySelector("#orgtitle").addEventListener("invalid", function () {
         "Org title must be at least 7 letters, hyphens, or spaces (no numbers/symbols)."
     );
 });
-
-

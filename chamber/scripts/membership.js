@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <button class="close-modal" aria-label="Close modal">X</button>
                     </div>
                     <div class="modal-body">
-                        <p class="cost"><strong>Cost:</strong> ${level.cost}</p>
+                        <p class="cost" style="text-align: left; margin: 0; padding: 0;"><strong>Cost:</strong> ${level.cost}</p>
                         <div class="benefits-section">
                             <h4>Benefits:</h4>
                             <ul class="benefits-list">

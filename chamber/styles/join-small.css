@@ -70,7 +70,7 @@
     }
 
     .app-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .application,

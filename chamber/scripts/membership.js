@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         const container = document.querySelector('.cards-container');
         const modal = document.getElementById('modal');
 
+        document.getElementById('membership-form').addEventListener('submit', function () {
+            document.getElementById('timestamp').value = new Date().toISOString();
+        });
+
         levels.forEach((level, index) => {
             const card = document.createElement('article');
             card.className = 'card';

@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         email: params.get('email') || 'Not provided',
         phone: params.get('phone') || 'Not provided',
         orgname: params.get('orgname') || 'Not provided',
-        membership: params.get('membership') || 'Not selected'
+        membership: params.get('membership') || 'Not selected',
+        timestamp: params.get('timestamp') || null
     };
     
     const membershipNames = {
@@ -17,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         silver: "Silver",
         gold: "Gold"
     };
+
+    const formattedTimestamp = formData.timestamp 
+        ? new Date(formData.timestamp).toLocaleString()
+        : 'Not recorded';
     
     const displayHTML = `
         <div class="data-row">
@@ -33,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="data-row">
             <strong>Membership Level:</strong> ${membershipNames[formData.membership] || formData.membership}
+        </div>
+        <div class="data-row">
+            <strong>Submitted:</strong> ${formattedTimestamp}
         </div>
     `;
 

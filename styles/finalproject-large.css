@@ -115,15 +115,13 @@ footer p {
     background-color: var(--primary);
 }
 
-@media (min-width: 1301px) {
-    .mobile-wireframe {
-        display: none;
-    }
+.mobile-wireframe {
+    display: none;
+}
 
-    .desktop-wireframe {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
+.desktop-wireframe {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }

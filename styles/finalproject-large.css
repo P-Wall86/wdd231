@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #2F4F4F;
+    --secondary: #FDF6EC;
+    --background: #F4A261;
+    --accent: #E8A22C;
+    --font: #333333;
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Lora", serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+h1,
+h2 {
+    font-family: var(--primary-font);
+    font-weight: 100;
+    color: var(--secondary);
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--font);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+h2 {
+    background-color: var(--primary);
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    padding: 0.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+h1::before,
+h1::after,
+h2::before {
+    content: "•";
+    color: var(--accent);
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+p {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    padding: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+    background-color: var(--secondary);
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--background);
+}
+
+.box {
+    border: solid 4px var(--accent);
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: x-large;
+    background-color: var(--primary);
+}
+
+@media (min-width: 1301px) {
+    .mobile-wireframe {
+        display: none;
+    }
+
+    .desktop-wireframe {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}

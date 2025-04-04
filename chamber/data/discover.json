@@ -1,0 +1,50 @@
+[
+    {
+        "img": "./images/Costanera.webp",
+        "name": "Flower City Waterfront",
+        "address": "124 Camellia Av., Flower City Waterfront, AR",
+        "description": "A scenic riverside promenade where locals and visitors enjoy sunsets, strolls, and cultural vibes along the Paraná River."
+    },
+    {
+        "img": "./images/Station.webp",
+        "name": "Old Station Cultural Villa",
+        "address": "298 Camellia Av., Flower City Waterfront, AR",
+        "description": "Once a bustling railway hub built in 1913, the old Posadas train station now lives on as Villa Cultural La Estación — a beautifully restored cultural center preserving English-style architecture while hosting vibrant arts, music, and community events by the waterfront."
+    },
+    {
+        "img": "./images/Bajada.webp",
+        "name": "Old Descent Street",
+        "address": " 298 Lantana St. Flower City, AR",
+        "description": "A historic descent through time, Bajada Vieja marks the origin of Posadas. From its cobblestone slope, gaze across the Paraná River to Paraguay, soaking in breathtaking views and stories etched into the path of the city's earliest days."
+    },
+    {
+        "img": "./images/Jul9.webp",
+        "name": "9th of July Square",
+        "address": "100 Zinnia St., Flower City, AR",
+        "description": "More than just the city's central square, this historic site hosts Flower City's Cathedral—built atop a former indigenous cemetery—and faces the Government House. It's a place where the layers of faith, power, and memory shape the civic soul of the city."
+    },
+    {
+        "img": "./images/PPark.webp",
+        "name": "Paraguay Republic Square",
+        "address": "88 Verbena Avenue, Flower City, AR",
+        "description": "A peaceful riverside square that honors the deep ties between Argentina and Paraguay. Shaded paths, leafy benches, and symbolic monuments make it a serene space to reflect on shared heritage just steps from the Paraná River."
+    },
+    {
+        "img": "./images/Lapla.webp",
+        "name": "La Placita Market",
+        "address": "27 Marigold Avenue, Flower City, AR",
+        "description": "A vibrant and traditional city market filled with local flavors, artisan goods, and cultural charm. From fresh produce and spices to handcrafted items and herbal remedies, La Placita is a true taste of daily life in Flower City."
+    },
+    {
+        "img": "./images/PdC.webp",
+        "name": "Knowledge Park",
+        "address": "401 Jacaranda Avenue, Southern Flower City, AR",
+        "description": "A unique cultural and scientific hub, the Knowledge Park blends innovation, education, and the arts. Home to museums, theaters, a modern library, and even a planetarium, it's a place where creativity and curiosity come alive."
+    },
+    {
+        "img": "./images/Cascada.webp",
+        "name": "Old Quarry Park-The Waterfall",
+        "address": "53 Lily Avenue, Flower City Waterfront, Posadas",
+        "description": "Once a quarry, now a peaceful park with native greenery and a striking waterfall designed as a tribute to the mighty Iguazú Falls. Old Quarry Park offers a quiet escape where nature and symbolism meet in the heart of the city."
+    }
+]

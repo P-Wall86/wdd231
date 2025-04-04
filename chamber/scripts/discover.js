@@ -1,23 +1,24 @@
 //Fetch!
+// Fetch!
 document.addEventListener("DOMContentLoaded", () => {
     fetch("./data/discover.json")
         .then(response => response.json())
         .then(cards => {
             const container = document.getElementById("card-container");
 
-            cards.forEach(card => {
+            cards.forEach((card, index) => {
                 const cardElement = document.createElement("div");
-                cardElement.className = "card";
+                cardElement.className = `card card-${index + 1}`;
 
                 cardElement.innerHTML = `
-            <h2>${card.name}</h2>
-            <figure>
-            <img src="${card.img}" alt="${card.name}">
-            </figure>
-            <address>${card.address}</address>
-            <p>${card.description}</p>
-            <button>Learn more</button>
-        `;
+                    <h2>${card.name}</h2>
+                    <figure>
+                        <img src="${card.img}" alt="${card.name}">
+                    </figure>
+                    <address>${card.address}</address>
+                    <p>${card.description}</p>
+                    <button>Learn more</button>
+                `;
 
                 container.appendChild(cardElement);
             });
@@ -50,3 +51,6 @@ if (messageBox) {
 }
 
 localStorage.setItem("lastVisit", now);
+
+
+

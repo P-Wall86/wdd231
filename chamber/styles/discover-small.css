@@ -64,6 +64,10 @@
     }
 
     /* MAIN */
+    .card img:hover {
+        transform: none;
+        box-shadow: none;
+    }
 
 
     /* FOOTER */

@@ -1,4 +1,3 @@
-//Fetch!
 // Fetch!
 document.addEventListener("DOMContentLoaded", () => {
     fetch("./data/discover.json")
@@ -15,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     <figure>
                         <img src="${card.img}" alt="${card.name}">
                     </figure>
-                    <address>${card.address}</address>
-                    <p>${card.description}</p>
+                    <address><em>${card.address}</em></address>
+                    <p><strong>${card.description}</strong></p>
                     <button>Learn more</button>
                 `;
 

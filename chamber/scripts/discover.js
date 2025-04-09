@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 cardElement.innerHTML = `
                     <h2>${card.name}</h2>
                     <figure>
-                        <img src="${card.img}" alt="${card.name}">
+                        <img src="${card.img}" alt="${card.name} loading="lazy">
                     </figure>
                     <address><em>${card.address}</em></address>
                     <p><strong>${card.description}</strong></p>

@@ -14,7 +14,7 @@ fetch('./data/catalog.json')
         <p><strong>${pet.breed}</strong></p>
         <p>${pet.age}</p>
         <p>${pet.description}</p>
-        <a href="${pet.link}">See more →</a>
+        <a href="adopt.html" target="_blank">See more →</a>
         </div>
     `;
             container.appendChild(card);

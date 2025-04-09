@@ -8,9 +8,8 @@
         "gender": "Female",
         "size": "Medium",
         "image": "./images/cuca.webp",
-        "description": "A senior lady who loved fetch, morning cuddles and belly rubs.",
-        "featured": true,
-        "link": "pets/cuca.html"
+        "description": "A senior lady who loved fetch, morning cuddles and belly rubs. She's the best pick if you need an organic alarm clock or vacuum cleaner.",
+        "featured": true
     },
     {
         "id": "rafa-002",
@@ -22,8 +21,7 @@
         "size": "Medium",
         "image": "./images/rafa.webp",
         "description": "Marked from birth and made for mayhem. Rafa's got the charm of a hooligan and the moves of a parkour pro.",
-        "featured": true,
-        "link": "pets/rafa.html"
+        "featured": true
     },
     {
         "id": "dante-003",
@@ -35,8 +33,7 @@
         "size": "Large",
         "image": "./images/dante.webp",
         "description": "A lovely senior, protective yet sweet, who can become a true companion through every moment.",
-        "featured": false,
-        "link": "pets/dante.html"
+        "featured": false
     },
     {
         "id": "beto-004",
@@ -48,8 +45,7 @@
         "size": "Small",
         "image": "./images/beto.webp",
         "description": "A young boi who likes toys and reduce your stress with his company.",
-        "featured": false,
-        "link": "pets/beto.html"
+        "featured": false
     },
     {
         "id": "kenway-005",
@@ -61,8 +57,7 @@
         "size": "Large",
         "image": "./images/kenway.webp",
         "description": "A fearless tabby who's seen more than most. One eye, a whole lot of heart.",
-        "featured": false,
-        "link": "pets/kenway.html"
+        "featured": false
     },
     {
         "id": "elise-006",
@@ -74,8 +69,7 @@
         "size": "Medium",
         "image": "./images/elise.webp",
         "description": "Sweet and sassy with a splash of color — Élise is a curious cuddlebug who's always ready for adventure.",
-        "featured": false,
-        "link": "pets/elise.html"
+        "featured": false
     },
     {
         "id": "nina-007",
@@ -86,8 +80,7 @@
         "gender": "Female",
         "image": "./images/nina.webp",
         "description": "Graceful, clever, and just a little mischievous — Nina is a curious explorer who's always ready for a sunny windowsill nap or a spontaneous zoomie session. She'll charm her way into your heart with one slow blink.",
-        "featured": false,
-        "link": "pets/nina.html"
+        "featured": false
     },
     {
         "id": "murray-008",
@@ -99,8 +92,7 @@
         "size": "Medium",
         "image": "./images/murray.webp",
         "description": "Murray's been around the block — and looks good doing it. Calm, clever, and always cozy in plaid.",
-        "featured": false,
-        "link": "pets/murray.html"
+        "featured": false
     },
     {
         "id": "dina-009",
@@ -111,8 +103,7 @@
         "gender": "Female",
         "size": "Medium",
         "image": "./images/dina.webp",
-        "description": "Fierce and loyal, Dina is a street-smart sweetheart with a warrior's heart. Pointy ears, a cropped tail, and a no-nonsense attitude—especially with cats—but to her family, she was pure love in a black coat.",
-        "featured": true,
-        "link": "pets/dina.html"
+        "description": "Fierce and loyal, Dina is a street-smart sweetheart with a warrior's heart. Pointy ears, a cropped tail, and a no-nonsense attitude—especially with cats—but to her family, she is pure love in a black coat.",
+        "featured": true
     }
 ]

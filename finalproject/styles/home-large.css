@@ -122,7 +122,7 @@ ul.links a:hover {
     max-height: 600px;
     margin-bottom: 1rem;
     color: var(--secondary);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 .7rem .7rem;
     border: 2px solid var(--primary-color);
     border-top: none;
     overflow: hidden;
@@ -277,15 +277,15 @@ ul.links a:hover {
     color: var(--font);
 }
 
-.card-content p:nth-of-type(1){
+.card-content p:nth-of-type(1) {
     font-family: var(--primary-font);
 }
 
-.card-content p:nth-of-type(2){
+.card-content p:nth-of-type(2) {
     font-style: italic;
 }
 
-.card-content p:nth-of-type(3){
+.card-content p:nth-of-type(3) {
     text-align: justify;
 }
 
@@ -306,6 +306,84 @@ ul.links a:hover {
 
 /* FEATURED ENDS HERE */
 
+/* NETWORK CTA STARTS HERE*/
+
+.network-cta {
+    background-color: var(--background);
+    padding: 3rem 1rem;
+    color: black;
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.network-cta-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-left {
+    flex: 1 1 250px;
+    text-align: center;
+    font-family: var(--primary-font);
+    background-color: var();
+}
+
+.cta-left h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-left img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.cta-right {
+    flex: 2 1 400px;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+.cta-right p {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.cta-right .final-line {
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    color: var(--font);
+    border: 2px solid var(--primary);
+}
+
+/* NETWORK CTA ENDS HERE*/
 
 /*FOOTER STARTS HERE */
 
@@ -315,7 +393,6 @@ footer {
     width: 100%;
     color: var(--secondary);
     background-color: var(--primary);
-    margin-top: 0.7rem;
 }
 
 .footer {

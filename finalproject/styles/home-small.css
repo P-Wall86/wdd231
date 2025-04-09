@@ -28,6 +28,7 @@
 
     #burger::before {
         content: "\2630";
+        padding: 0.7rem;
     }
 
     #burger {
@@ -154,5 +155,11 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 0 1rem;
+    }
+
+    /* BACK-TO-TOP */
+    #back-to-top {
+        padding: 0.2rem 0.8rem;
+        right: 15px;
     }
 }

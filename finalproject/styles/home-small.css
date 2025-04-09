@@ -118,6 +118,19 @@
         width: max-content;
     }
 
+    /* FEATURED */
+    .featured-pets h2 {
+        font-size: 1.7rem;
+    }
+
+    .card-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-container a {
+        margin-top: 0.7rem;
+    }
+
     /* FOOTER */
     .footer {
         display: flex;

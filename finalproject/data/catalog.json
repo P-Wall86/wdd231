@@ -3,11 +3,11 @@
         "id": "cuca-001",
         "name": "Cuca",
         "species": "Dog",
-        "breed": "Mixed",
+        "breed": "Mixed breed (Brown)",
         "age": "10 years",
         "gender": "Female",
         "size": "Medium",
-        "image": "images/pets/fido-thumb.webp",
+        "image": "./images/cuca.webp",
         "description": "A senior lady who loved fetch, morning cuddles and belly rubs.",
         "featured": true,
         "link": "pets/cuca.html"
@@ -20,7 +20,7 @@
         "age": "5 months",
         "gender": "Male",
         "size": "Medium",
-        "image": "images/pets/rafa-thumb.webp",
+        "image": "./images/rafa.webp",
         "description": "Marked from birth and made for mayhem. Rafa's got the charm of a hooligan and the moves of a parkour pro.",
         "featured": true,
         "link": "pets/rafa.html"
@@ -33,9 +33,9 @@
         "age": "7 years",
         "gender": "Male",
         "size": "Large",
-        "image": "images/pets/fido-thumb.webp",
+        "image": "./images/dante.webp",
         "description": "A lovely senior, protective yet sweet, who can become a true companion through every moment.",
-        "featured": true,
+        "featured": false,
         "link": "pets/dante.html"
     },
     {
@@ -46,9 +46,9 @@
         "age": "3 years",
         "gender": "Male",
         "size": "Small",
-        "image": "images/pets/luna-thumb.webp",
+        "image": "./images/beto.webp",
         "description": "A young boi who likes toys and reduce your stress with his company.",
-        "featured": true,
+        "featured": false,
         "link": "pets/beto.html"
     },
     {
@@ -59,9 +59,9 @@
         "age": "8 years",
         "gender": "Male",
         "size": "Large",
-        "image": "images/pets/fido-thumb.webp",
+        "image": "./images/kenway.webp",
         "description": "A fearless tabby who's seen more than most. One eye, a whole lot of heart.",
-        "featured": true,
+        "featured": false,
         "link": "pets/kenway.html"
     },
     {
@@ -72,9 +72,9 @@
         "age": "2 years",
         "gender": "Female",
         "size": "Medium",
-        "image": "images/pets/elise-thumb.webp",
+        "image": "./images/elise.webp",
         "description": "Sweet and sassy with a splash of color — Élise is a curious cuddlebug who's always ready for adventure.",
-        "featured": true,
+        "featured": false,
         "link": "pets/elise.html"
     },
     {
@@ -84,9 +84,9 @@
         "breed": "Domestic Shorthair (Tabby)",
         "age": "2 years",
         "gender": "Female",
-        "image": "images/pets/nina-thumb.webp",
+        "image": "./images/nina.webp",
         "description": "Graceful, clever, and just a little mischievous — Nina is a curious explorer who's always ready for a sunny windowsill nap or a spontaneous zoomie session. She'll charm her way into your heart with one slow blink.",
-        "featured": true,
+        "featured": false,
         "link": "pets/nina.html"
     },
     {
@@ -97,21 +97,21 @@
         "age": "5 years",
         "gender": "Male",
         "size": "Medium",
-        "image": "images/pets/murray-thumb.webp",
+        "image": "./images/murray.webp",
         "description": "Murray's been around the block — and looks good doing it. Calm, clever, and always cozy in plaid.",
-        "featured": true,
+        "featured": false,
         "link": "pets/murray.html"
     },
     {
         "id": "dina-009",
         "name": "Dina",
         "species": "Dog",
-        "breed": "Mixed Breed (Black)",
-        "age": "Forever in our hearts",
+        "breed": "Mixed breed (Black)",
+        "age": "9 years",
         "gender": "Female",
         "size": "Medium",
-        "image": "images/pets/dina-thumb.webp",
-        "description": "Fierce and loyal, Dina was a street-smart sweetheart with a warrior's heart. Pointy ears, a cropped tail, and a no-nonsense attitude—especially with cats—but to her family, she was pure love in a black coat.",
+        "image": "./images/dina.webp",
+        "description": "Fierce and loyal, Dina is a street-smart sweetheart with a warrior's heart. Pointy ears, a cropped tail, and a no-nonsense attitude—especially with cats—but to her family, she was pure love in a black coat.",
         "featured": true,
         "link": "pets/dina.html"
     }

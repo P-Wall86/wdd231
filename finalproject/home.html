@@ -2,13 +2,14 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome - Pawsome Homes</title>
-    <meta name="description" content="Landing page for Pawsome Homes, a platform to match pets with their forever families">
-    <meta name="author" content="Pamela P. Pared">
+    <meta name="description"
+        content="Landing page for Pawsome Homes, a platform to match pets with their forever families">
+    <meta name="author" content="Pamela P. Pared" />
     <meta property="og:title" content="WDD 231 Individual Project Home Page">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://p-wall86.github.io/wdd231/finalproject/home.html">
     <meta property="og:image" content="https://p-wall86.github.io/wdd231/finalproject/images/hero-1600.webp">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="styles/home-small.css">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/featured.js" defer></script>
 
     <link rel="icon" href="images/pwhm.ico">
 
@@ -28,7 +30,7 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="images/pwhm.webp" alt="logo" loading="lazy" />
+            <img src="images/pwhm.webp" alt="logo" loading="lazy">
             <button id="burger" aria-label="Toggle navigation menu"></button>
         </div>
     </header>
@@ -46,17 +48,22 @@
             <img src="images/hero-800.webp" srcset="
             images/hero-800.webp   800w,
             images/hero-1200.webp 1200w,
-            images/hero-1600.webp 1600w" sizes="(max-width: 38rem) 100vw, 1600px"
-                alt="Dog and cat being happy. Learn from them." class="hero-img" fetchpriority="high" loading="eager">
-                
+            images/hero-1600.webp 1600w
+            " sizes="(max-width: 38rem) 100vw, 1600px" alt="Dog and cat being happy. Learn from them." class="hero-img"
+                fetchpriority="high" loading="eager">
+
             <h1 class="hero-heading">Find your pawsome match</h1>
 
             <div class="cta-container">
                 <a href="adopt.html" class="cta-button">Adopt Now!</a>
                 <a href="resources.html" class="cta-button">Learn About Fostering</a>
             </div>
-            
         </div>
+
+        <section class="featured-pets">
+            <h2>Meet Our Featured Friends</h2>
+            <div id="featured-container" class="card-container"></div>
+        </section>
     </main>
 
     <footer>

@@ -63,6 +63,10 @@
         margin: 0 auto;
         width: 50%;
     }
+    
+    .links li:first-child a {
+        margin-top: 0.5rem;
+    }
 
     .links li:last-child a {
         margin-bottom: 0.5rem;

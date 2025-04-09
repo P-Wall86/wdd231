@@ -109,6 +109,93 @@ ul.links a:hover {
 
 /* HEADER ENDS HERE */
 
+/* MAIN STARTS HERE */
+/* HERO STARTS HERE */
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 400px;
+    max-height: 600px;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    border-radius:  0 0 10px 10px;
+    border: 2px solid var(--primary-color);
+    border-top: none;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7) contrast(1.2) opacity(0.7);
+    z-index: -1;
+}
+
+.hero-heading {
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    width: 90%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+    border: var(--secondary) solid 1px;
+}
+
+.hero-heading h1 {
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    z-index: 1;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.cta-button {
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    background-color: var(--primary);
+    font-weight: bold;
+    font-family: var(--primary-font);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary);
+    color: var(--font);
+    border: 2px solid var(--primary);
+}
+
+/* HERO IMAGE ENDS HERE */
+
+
 /*FOOTER STARTS HERE */
 
 footer {

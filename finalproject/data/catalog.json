@@ -42,7 +42,7 @@
         "id": "beto-004",
         "name": "Beto",
         "species": "Dog",
-        "type": "Adult",
+        "type": "Adult dog",
         "breed": "Pug",
         "age": "3 year",
         "gender": "Male",
@@ -59,7 +59,7 @@
         "breed": "Domestic Shorthair (Tabby)",
         "age": "8 years",
         "gender": "Male",
-        "size": "Large",
+        "size": "Medium",
         "image": "./images/kenway.webp",
         "description": "A fearless tabby who's seen more than most. One eye, a whole lot of heart.",
         "featured": false

@@ -1,0 +1,92 @@
+{
+    "kitten": [
+        {
+            "title": "Household Readiness",
+            "items": [
+                "Safe, kitten-proofed space (no loose wires/toxins).",
+                "Plan for spay/neuter if not already done."
+            ]
+        },
+        {
+            "title": "Time Commitment",
+            "items": [
+                "Able to socialize kitten (playtime, training).",
+                "Willing to provide lifetime care (15+ years)."
+            ]
+        },
+        {
+            "title": "Financial Responsibility",
+            "items": [
+                "Budget for vaccinations, vet visits, and high-quality food."
+            ]
+        }
+    ],
+    "adult-dog": [
+    {
+        "title": "Environment",
+        "items": [
+            "Secure yard or commitment to leash walks 2 or 3 times a day.",
+            "No breed or size restrictions in your housing."
+        ]
+    },
+    {
+        "title": "Routine & Training",
+        "items": [
+            "Basic training or willingness to continue reinforcement.",
+            "Time for daily exercise and mental stimulation."
+        ]
+    },
+    {
+        "title": "Long-Term Care",
+        "items": [
+            "Commitment to vet visits, proper diet, and grooming.",
+            "Willingness to adapt to the dog's temperament or special needs."
+        ]
+    }
+],
+"adult-cat": [
+    {
+        "title": "Safe Space",
+        "items": [
+            "Indoor space with scratching posts, litter box, and resting spots.",
+            "Windows or perches for enrichment."
+        ]
+    },
+    {
+        "title": "Care Commitment",
+        "items": [
+            "Regular feeding, litter box maintenance, and vet care.",
+            "Time for bonding and play, even for independent cats."
+        ]
+    },
+    {
+        "title": "Long-Term Responsibility",
+        "items": [
+            "Understanding of cat behavior and needs.",
+            "Willingness to provide care for 15+ years."
+        ]
+    }
+],
+    "senior": [
+        {
+            "title": "Comfort Focus",
+            "items": [
+                "Quiet home (no young kids/chaos if pet is frail).",
+                "Ramps/soft bedding if mobility issues."
+            ]
+        },
+        {
+            "title": "Health Commitment",
+            "items": [
+                "Willingness to manage chronic conditions (arthritis, etc.).",
+                "Emergency vet fund or pet insurance."
+            ]
+        },
+        {
+            "title": "End-of-Life Care",
+            "items": [
+                "Understanding their shorter timeline (love without regrets)."
+            ]
+        }
+    ]
+}

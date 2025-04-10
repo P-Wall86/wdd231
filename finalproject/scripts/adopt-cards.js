@@ -34,7 +34,7 @@ function displayPets(petsList) {
         const petCard = document.createElement('div');
         petCard.classList.add('card');
         petCard.innerHTML = `
-        <h3>${pet.name}</h3>
+        <h2>${pet.name}</h2>
         <img src="${pet.image}" alt="${pet.name}" loading="lazy">
         <div class="info">
         <p><strong>Species: </strong> ${pet.species}</p>

@@ -73,6 +73,24 @@
         margin-bottom: 0.5rem;
     }
 
+    /* MAIN */
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
     /* FOOTER */
     .footer {
         display: flex;

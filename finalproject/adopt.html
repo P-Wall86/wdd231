@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adoption Hub - Pawsome Homes</title>
-    <meta name="description" content="Adoption page for Pawsome Homes, a platform to match pets with their forever families">
+    <meta name="description"
+        content="Adoption page for Pawsome Homes, a platform to match pets with their forever families">
     <meta name="author" content="Pamela P. Pared">
     <meta property="og:title" content="WDD 231 Individual Project Adoption Page">
     <meta property="og:type" content="website">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="styles/adopt-small.css">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/adopt-cards.js" defer></script>
 
     <link rel="icon" href="images/pwhm.ico">
 
@@ -42,7 +44,16 @@
     </nav>
 
     <main>
+        <h1>🐾 Say "Hi" to our pets! 🐾</h1>
+        <div class="filter-container">
+            <label for="pet-type-filter">Filter by pet type:</label>
+            <select id="pet-type-filter" onchange="filterPets()">
+                <option value="all">All Pets</option>
+            </select>
+        </div>
 
+        <div class="catalog" id="catalog"></div>
+        </div>
     </main>
 
     <footer>

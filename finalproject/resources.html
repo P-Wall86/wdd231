@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources - Pawsome Homes</title>
-    <meta name="description" content="Resources page for Pawsome Homes, a platform to match pets with their forever families">
+    <meta name="description"
+        content="Resources page for Pawsome Homes, a platform to match pets with their forever families">
     <meta name="author" content="Pamela P. Pared">
     <meta property="og:title" content="WDD 231 Individual Project Resources Page">
     <meta property="og:type" content="website">
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="styles/resources-small.css">
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-
+    <script src="scripts/resources.js" defer></script>
     <link rel="icon" href="images/pwhm.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +43,114 @@
     </nav>
 
     <main>
+        <h1>🐾 Get involved & learn more 🐾</h1>
+        <section id="fostering-info">
+            <h2>Fostering: Give a Pet a Temporary Home</h2>
+            <p class="intro-text">
+                Fostering is a temporary commitment that makes a big difference. By providing a safe and loving
+                environment, you can help a pet find their forever home.
+            </p>
+
+            <div class="info-box">
+                <h3 class="info-title">What is Fostering?</h3>
+                <p class="info-response">
+                    Fostering means providing a temporary home for a pet until they are ready for adoption. During this
+                    time, you help them adjust to home life, receive basic training, and prepare them for their forever
+                    family.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3 class="info-title">Why Fostering is Important</h3>
+                <p class="info-response">
+                    Fostering is vital to helping animals in need. It frees up space in shelters, allows pets to
+                    experience a home environment, and increases their chances of finding a permanent family.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3 class="info-title">How to Become a Foster Parent</h3>
+                <p class="info-response">
+                    Becoming a foster parent is easy! Start by contacting your local shelters or adoption organizations,
+                    fill out a simple application, and go through a brief orientation to learn more about the process.
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3 class="info-title">Real-Life Foster Stories</h3>
+                <p class="info-response">
+                    "I fostered a little kitten named Lucy, who was abandoned at just a few weeks old. She was so scared
+                    at first, but after a few weeks, she blossomed into a loving, playful kitten. She was adopted by a
+                    wonderful family, and I still get updates on her progress!" – Emily, Foster Parent
+                </p>
+            </div>
+
+            <div class="cta-section">
+                <p>If you're ready to make a difference, <a href="/apply-to-foster" class="cta-link">apply to become a
+                        foster parent</a> today!</p>
+            </div>
+        </section>
+
+        <section class="vet-registration">
+            <div class="form-container">
+                <h2>Join Our Vet & Shelter Network</h2>
+                <form id="vetForm">
+                    <label for="orgName">Organization Name</label>
+                    <input type="text" id="orgName" name="orgName" required>
+
+                    <label for="contactEmail">Contact Email</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location">
+
+                    <button type="submit">Apply Now</button>
+                </form>
+            </div>
+
+            <div class="info-container">
+                <h3>Why Join?</h3>
+                <p>Connect with the community, gain exposure, and collaborate directly with our network.</p>
+                <button id="show-benefits">See Full Benefits</button>
+            </div>
+        </section>
+
+        <section id="additional-resources">
+            <h2>Helpful Resources</h2>
+
+            <div class="resource-links">
+                <h3>External Links</h3>
+                <ul>
+                    <li><a href="#" target="_blank">Local Animal Welfare Org</a></li>
+                    <li><a href="#" target="_blank">Government Pet Adoption Guidelines</a></li>
+                    <li><a href="#" target="_blank">Find a Shelter Near You</a></li>
+                </ul>
+            </div>
+
+            <h3>Featured Articles</h3>
+            <div class="articles-grid">
+                <div class="article-card">
+                    <h4>Preparing for Your New Pet</h4>
+                    <p>Everything you need to know before bringing a new animal home.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="article-card">
+                    <h4>Benefits of Adopting</h4>
+                    <p>Discover how adoption changes lives — both theirs and yours.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="events-section">
+                <h3>Upcoming Events</h3>
+                <div class="event-card">
+                    <p><strong>Pet Adoption Fair</strong> - April 20th @ 9th of July Square</p>
+                </div>
+                <div class="event-card">
+                    <p><strong>Volunteer Orientation</strong> - May 2nd @ Old Station Cultural Villa</p>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -72,6 +181,19 @@
     </footer>
 
     <button id="back-to-top" title="Go to top">↑</button>
+
+    <div id="benefits-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Network Member Benefits</h3>
+            <ul>
+                <li>Get featured on our homepage and newsletter</li>
+                <li>Direct referrals from adoption requests</li>
+                <li>Support through volunteer and donation drives</li>
+                <li>Exclusive collaboration opportunities with our team</li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

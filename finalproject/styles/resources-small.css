@@ -73,6 +73,83 @@
         margin-bottom: 0.5rem;
     }
 
+    /* FOSTERING */
+    .info-response {
+        display: none;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-left: 1rem;
+    }
+
+    .info-box.active .info-response {
+        display: block;
+    }
+
+    .info-title::after {
+        content: "\25BC";
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .info-box.active .info-title::after {
+        content: "\25B2";
+        transform: rotate(90deg);
+    }
+
+    .info-title {
+        font-size: 1.2rem;
+    }
+
+    /* FORM */
+    .vet-registration {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .form-container,
+    .info-container {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    /* MODAL */
+    .modal-content {
+        width: 90%;
+        margin: 30% auto;
+        padding: 1.5rem;
+    }
+
+    .modal-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content ul {
+        padding-left: 1rem;
+    }
+
+    .modal-content li {
+        font-size: 1rem;
+    }
+
+    /* FINAL SECTION */
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .resource-links ul {
+        padding-left: 1rem;
+    }
+
+    .event-card {
+        font-size: 0.95rem;
+    }
+
     /* FOOTER */
     .footer {
         display: flex;

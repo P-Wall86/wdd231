@@ -106,3 +106,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         updateChecklist(this.value);
     });
 });
+
+//THANK YOU
+document.addEventListener("DOMContentLoaded", function () {
+    const adoptionForm = document.getElementById("adoption-form");
+
+    if (adoptionForm) {
+        adoptionForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = {
+                formType: "adoption",
+                fullName: adoptionForm["full-name"].value.trim(),
+                email: adoptionForm["email"].value.trim(),
+                petType: adoptionForm["pet-type"].value,
+                livingSituation: adoptionForm["living"].value,
+            };
+
+            localStorage.setItem("formSubmission", JSON.stringify(formData));
+            window.location.href = "thankyou.html";
+        });
+    }
+});

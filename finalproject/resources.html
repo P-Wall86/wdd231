@@ -96,13 +96,15 @@
                 <h2>🐾 Join Our Vet & Shelter Network 🐾</h2>
                 <form id="vetForm">
                     <label for="orgName">Organization Name *</label>
-                    <input type="text" id="orgName" name="orgName" required>
+                    <input type="text" id="orgName" name="orgName"
+                        title="Please enter your organization's full legal name"
+                        required autocomplete="organization" placeholder="E.g.: Big Bois Shelter">
 
                     <label for="contactEmail">Contact Email *</label>
-                    <input type="email" id="contactEmail" name="contactEmail" required>
+                    <input type="email" id="contactEmail" name="contactEmail" required autocomplete="email" placeholder="name@example.com">
 
-                    <label for="location">Location</label>
-                    <input type="text" id="location" name="location">
+                    <label for="location">Location *</label>
+                    <input type="text" id="location" name="location" title="Tell us where are you located" required>
 
                     <button type="submit">Apply Now</button>
                 </form>

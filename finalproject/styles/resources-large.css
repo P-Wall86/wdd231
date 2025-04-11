@@ -122,23 +122,26 @@ main h1 {
 
 #fostering-info {
     padding: 2rem;
-    background-color: #f8f8f8;
+    background-color: var(--primary);
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 0.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #fostering-info h2 {
+    font-family: var(--primary-font);
     font-size: 2rem;
-    color: #333;
+    color: var(--secondary);
     text-align: center;
     margin-bottom: 1rem;
 }
 
 .intro-text {
     font-size: 1.1rem;
-    color: #666;
+    color: var(--secondary);
+    font-family: var(--primary-font);
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -146,7 +149,7 @@ main h1 {
 .info-box {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: var(--secondary);
     padding: 1rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -156,9 +159,12 @@ main h1 {
 .info-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: var(--font);
     flex: 1 0 150px;
     margin-right: 10px;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-family: var(--primary-font);
 }
 
 .info-response {
@@ -166,42 +172,51 @@ main h1 {
     font-size: 1rem;
     line-height: 1.5;
     padding-left: 1rem;
-    color: #666;
+    color: var(--font);
+    text-align: justify;
     flex: 3 1 500px;
 }
 
 .cta-section {
     text-align: center;
     margin-top: 2rem;
+    font-family: var(--primary-font);
+    color: var(--secondary);
 }
 
 .cta-link {
     font-weight: bold;
-    color: #5cb85c;
+    color: var(--secondary);
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .cta-link:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid var(--accent);
 }
 
 /* Fostering ends here */
 /* Form section starts here */
 
 .vet-registration {
+    background-color: var(--background);
+    font-family: var(--primary-font);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
     padding: 2rem;
-    max-width: 60rem;
-    margin: 0 auto;
+    max-width: 100%;
+}
+
+.vet-registration h2, .info-container h3 {
+    padding: 0.7rem;
+    font-size: 1.5rem;
 }
 
 .form-container {
     flex: 1;
-    background-color: #f9f9f9;
+    background-color: var(--secondary);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -210,15 +225,19 @@ main h1 {
 .info-container {
     flex: 1;
     padding: 1.5rem;
-    background-color: #fff;
-    border: 2px dashed #ccc;
+    background-color: var(--secondary);
+    border: 2px dashed var(--accent);
     border-radius: 8px;
     text-align: center;
 }
 
+.info-container p {
+    font-size: 1.3rem;
+}
+
 #show-benefits {
-    background-color: #0055aa;
-    color: white;
+    background-color: var(--primary);
+    color: var(--secondary);
     border: none;
     padding: 0.75rem 1.25rem;
     border-radius: 5px;
@@ -228,7 +247,8 @@ main h1 {
 }
 
 #show-benefits:hover {
-    background-color: #003d80;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Form section ends here */

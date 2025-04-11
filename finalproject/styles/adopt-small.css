@@ -91,6 +91,42 @@
         margin: 0 auto;
     }
 
+    .adoption-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .modal-content .close-button {
+        font-size: 2.5rem;
+    }
+
+    /* ACCORDION */
+    .accordion-content {
+        display: none;
+        padding-left: 1rem;
+    }
+    
+    .accordion-content.active {
+        display: block;
+    }
+    
+    .accordion-title {
+        cursor: pointer;
+        background-color: var(--secondary);
+        border: 1px dotted var(--primary);
+        padding: 0.5rem;
+        border-radius: 4px;
+    }
+    
+    .accordion-title.open::after {
+        content: "▲";
+        float: right;
+    }
+    
+    .accordion-title::after {
+        content: "▼";
+        float: right;
+    }
+
     /* FOOTER */
     .footer {
         display: flex;

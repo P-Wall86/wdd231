@@ -275,7 +275,8 @@ main h1 {
     font-size: 1rem;
 }
 
-#pet-type, #living {
+#pet-type,
+#living {
     font-family: var(--primary-font);
 }
 
@@ -315,6 +316,59 @@ main h1 {
 }
 
 /* Adoption form-requirements ends here*/
+
+/* Info Modal starts here */
+
+.info-icon {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: justify;
+    position: relative;
+    font-family: var(--primary-font);
+}
+
+.modal-content p {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Info Modal ends here */
 
 /* Requirements checklist starts here */
 .checklist-column {

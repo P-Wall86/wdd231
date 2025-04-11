@@ -74,12 +74,24 @@
     }
 
     /* FOSTERING */
+    #fostering-info {
+        margin: 0.5rem;
+    }
+
+    #fostering-info h2 {
+        font-size: 1.7rem;
+    }
+
+    .intro-text {
+        text-align: justify;
+    }
+
     .info-response {
         display: none;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         font-size: 1rem;
         line-height: 1.5;
-        padding-left: 1rem;
+        padding-left: 0.3rem;
     }
 
     .info-box.active .info-response {
@@ -89,7 +101,7 @@
     .info-title::after {
         content: "\25BC";
         font-size: 1.5rem;
-        margin-left: 1rem;
+        margin-left: 0.7rem;
         transition: transform 0.3s ease;
     }
 

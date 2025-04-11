@@ -57,19 +57,21 @@
 
         <section class="adoption-section">
             <div class="form-column">
-                <h2>Apply for Adoption</h2>
+                <h2>Apply for Adoption
+                    <button class="info-icon" aria-label="Adoption Info">&#9432;</button>
+                </h2>
                 <form id="adoption-form">
                     <label for="full-name">Full Name *</label>
-                    <input type="text" id="full-name" name="full-name" required>
+                    <input type="text" id="full-name" name="full-name" title="Please enter your full name" required autocomplete="given-name">
 
                     <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" type="Please enter a valid email address (e.g, name@example.com)" required autocomplete="email" placeholder="name@example.com">
 
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" title="Please enter a valid phone number (e.g., +1234567890 or 123-456-7890)" autocomplete="tel" placeholder="+1 (123) 456-7890">
 
                     <label for="pet-type">Preferred Pet Type *</label>
-                    <select id="pet-type" name="pet-type" required>
+                    <select id="pet-type" name="pet-type" required title="Select your preferred pet type">
                         <option value="">--Select a pet type--</option>
                         <option value="kitten">Kitten</option>
                         <option value="adult-dog">Adult dog</option>
@@ -78,10 +80,10 @@
                     </select>
 
                     <label for="why">Why do you want to adopt?</label>
-                    <textarea id="why" name="why" rows="4"></textarea>
+                    <textarea id="why" name="why" title="Briefly describe why you want to adopt" rows="4"></textarea>
 
                     <label for="living">Living Situation *</label>
-                    <select id="living" name="living" required>
+                    <select id="living" name="living" required title="Select your living situation">
                         <option value="">--Select one--</option>
                         <option value="apartment">Apartment</option>
                         <option value="house">House</option>
@@ -105,6 +107,14 @@
                 <h2>Adoption Requirements Checklist</h2>
                 <div id="checklist-content">
                     <p class="placeholder-message">Requirements will display once a pet type is selected.</p>
+                </div>
+            </div>
+
+            <div id="info-modal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <p>To be eligible for adoption, please ensure you check all the boxes in the requirements checklist
+                        after selecting a pet type.</p>
                 </div>
             </div>
         </section>

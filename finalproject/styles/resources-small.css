@@ -72,6 +72,10 @@
     .links li:last-child a {
         margin-bottom: 0.5rem;
     }
+    /* MAIN */
+    main h1 {
+        font-size: 2rem;
+    }
 
     /* FOSTERING */
     #fostering-info {
@@ -111,7 +115,8 @@
     }
 
     .info-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin: 0;
     }
 
     /* FORM */

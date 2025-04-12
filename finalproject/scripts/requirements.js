@@ -1,4 +1,4 @@
-// MODAL
+
 export function openModal() {
     const infoIcon = document.querySelector('.info-icon');
     const modal = document.getElementById('info-modal');
@@ -21,7 +21,7 @@ export function openModal() {
     }
 }
 
-// REQUIREMENTS
+
 let requirements = {};
 
 export async function loadRequirements() {
@@ -103,7 +103,6 @@ export function updateChecklist(petType) {
     });
 }
 
-// THANK YOU MESSAGE
 
     const adoptionForm = document.getElementById("adoption-form");
 

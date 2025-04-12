@@ -1,4 +1,4 @@
-// ACCORDION
+
 export function initializeAccordion() {
     const infoBoxes = document.querySelectorAll('.info-box');
 
@@ -13,7 +13,7 @@ export function initializeAccordion() {
     });
 }
 
-// MODAL
+
 export function initializeModal() {
     const openBtn = document.getElementById("show-benefits");
     const modal = document.getElementById("benefits-modal");
@@ -34,7 +34,7 @@ export function initializeModal() {
     });
 }
 
-// THANK YOU MESSAGE
+
     const vetForm = document.getElementById("vetForm");
 
     if (vetForm) {

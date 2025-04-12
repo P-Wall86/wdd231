@@ -1,4 +1,4 @@
-// BURGER MENU TOGGLE
+
 export function toggleBurgerMenu() {
     const burgerElement = document.querySelector('#burger');
     const navElement = document.querySelector('#dish');
@@ -9,7 +9,6 @@ export function toggleBurgerMenu() {
     });
 }
 
-// BACK-TO-TOP BUTTON
 export function backToTopButton() {
     const backToTopButton = document.getElementById("back-to-top");
 
@@ -29,7 +28,6 @@ export function backToTopButton() {
     });
 }
 
-// ACTIVE LINK FUNCTIONALITY
 export function setActiveLink() {
     const links = document.querySelectorAll('.links a');
     const currentPage = window.location.pathname.split("/").pop();

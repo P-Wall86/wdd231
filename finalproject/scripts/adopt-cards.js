@@ -20,20 +20,17 @@ export async function loadPets() {
 export function loadPetTypes() {
     const petTypeSelect = document.getElementById('pet-type-filter');
 
-    // First, create and add the "All Pets" option
     const allPetsOption = document.createElement('option');
     allPetsOption.value = 'all';
     allPetsOption.textContent = 'All Pets';
     petTypeSelect.appendChild(allPetsOption);
 
-    // Create a set to store unique pet types
     const petTypes = new Set(pets.map(pet => pet.type));
-
-    // Add the rest of the pet types to the dropdown
+    
     petTypes.forEach(type => {
         const option = document.createElement('option');
         option.value = type;
-        option.textContent = type.charAt(0).toUpperCase() + type.slice(1); // Capitalize the first letter
+        option.textContent = type.charAt(0).toUpperCase() + type.slice(1);
         petTypeSelect.appendChild(option);
     });
 }

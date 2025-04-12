@@ -1,26 +1,30 @@
-//MODAL
-const infoIcon = document.querySelector('.info-icon');
-const modal = document.getElementById('info-modal');
-const closeBtn = document.querySelector('.close-button');
+// MODAL
+export function openModal() {
+    const infoIcon = document.querySelector('.info-icon');
+    const modal = document.getElementById('info-modal');
+    const closeBtn = document.querySelector('.close-button');
 
-infoIcon.addEventListener('click', () => {
-    modal.classList.remove('hidden');
-});
-
-closeBtn.addEventListener('click', () => {
-    modal.classList.add('hidden');
-});
-
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modal.classList.add('hidden');
+    if (infoIcon && modal && closeBtn) {
+        infoIcon.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+    
+        closeBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+    
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
     }
-});
+}
 
-//REQUIREMENTS
+// REQUIREMENTS
 let requirements = {};
 
-async function loadRequirements() {
+export async function loadRequirements() {
     try {
         const response = await fetch('./data/requirements.json');
         if (!response.ok) {
@@ -32,7 +36,7 @@ async function loadRequirements() {
     }
 }
 
-function updateChecklist(petType) {
+export function updateChecklist(petType) {
     const container = document.getElementById('checklist-content');
     container.innerHTML = '';
 
@@ -99,16 +103,8 @@ function updateChecklist(petType) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
-    await loadRequirements();
+// THANK YOU MESSAGE
 
-    document.getElementById('pet-type').addEventListener('change', function () {
-        updateChecklist(this.value);
-    });
-});
-
-//THANK YOU
-document.addEventListener("DOMContentLoaded", function () {
     const adoptionForm = document.getElementById("adoption-form");
 
     if (adoptionForm) {
@@ -127,4 +123,4 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "thankyou.html";
         });
     }
-});
+

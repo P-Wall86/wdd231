@@ -1,18 +1,20 @@
-//ACCORDION
-document.addEventListener("DOMContentLoaded", () => {
+// ACCORDION
+export function initializeAccordion() {
     const infoBoxes = document.querySelectorAll('.info-box');
 
     infoBoxes.forEach(box => {
         const title = box.querySelector('.info-title');
 
-        title.addEventListener('click', () => {
-            box.classList.toggle('active');
-        });
+        if (title) {
+            title.addEventListener('click', () => {
+                box.classList.toggle('active');
+            });
+        }
     });
-});
+}
 
-//MODAL
-document.addEventListener("DOMContentLoaded", () => {
+// MODAL
+export function initializeModal() {
     const openBtn = document.getElementById("show-benefits");
     const modal = document.getElementById("benefits-modal");
     const closeBtn = modal.querySelector(".close-button");
@@ -30,10 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.style.display = "none";
         }
     });
-});
+}
 
-//THANK YOU
-document.addEventListener("DOMContentLoaded", function () {
+// THANK YOU MESSAGE
     const vetForm = document.getElementById("vetForm");
 
     if (vetForm) {
@@ -56,4 +57,3 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "thankyou.html";
         });
     }
-});

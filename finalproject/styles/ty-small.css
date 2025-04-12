@@ -140,9 +140,10 @@
 
     .right-section {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 1rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
     /* BACK-TO-TOP */

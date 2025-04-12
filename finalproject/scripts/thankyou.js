@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+function displayThankYouMessage() {
     const data = JSON.parse(localStorage.getItem("formSubmission"));
     const title = document.getElementById("thankTitle");
     const message = document.getElementById("thankMessage");
     const infoBox = document.getElementById("submittedInfo");
-    const confirmationBlocks = document.querySelectorAll(".confirmation-text");
+
+    console.log("Retrieved data from localStorage:", data);
 
     if (data && data.formType === "vet") {
         title.textContent = "Thanks for Joining Us!";
@@ -34,7 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
         title.textContent = "Oops!";
         message.textContent = "No form data was found. Please go back and try again.";
         infoBox.innerHTML = "";
-
-        confirmationBlocks.forEach(el => el.style.display = "none");
+        document.querySelector(".confirmation-text").style.display = "none";
     }
-});
+}
+
+document.addEventListener('DOMContentLoaded', displayThankYouMessage);

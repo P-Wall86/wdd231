@@ -1,6 +1,9 @@
 let pets = [];
 
-async function loadPets() {
+export async function loadPets() {
+    const container = document.getElementById("catalog");
+    if (!container) return;
+
     try {
         const response = await fetch('./data/catalog.json');
         if (!response.ok) {
@@ -14,19 +17,28 @@ async function loadPets() {
     }
 }
 
-function loadPetTypes() {
+export function loadPetTypes() {
     const petTypeSelect = document.getElementById('pet-type-filter');
 
+    // First, create and add the "All Pets" option
+    const allPetsOption = document.createElement('option');
+    allPetsOption.value = 'all';
+    allPetsOption.textContent = 'All Pets';
+    petTypeSelect.appendChild(allPetsOption);
+
+    // Create a set to store unique pet types
     const petTypes = new Set(pets.map(pet => pet.type));
+
+    // Add the rest of the pet types to the dropdown
     petTypes.forEach(type => {
         const option = document.createElement('option');
         option.value = type;
-        option.textContent = type;
+        option.textContent = type.charAt(0).toUpperCase() + type.slice(1); // Capitalize the first letter
         petTypeSelect.appendChild(option);
     });
 }
 
-function displayPets(petsList) {
+export function displayPets(petsList) {
     const catalog = document.getElementById('catalog');
     catalog.innerHTML = '';
 
@@ -47,7 +59,7 @@ function displayPets(petsList) {
     });
 }
 
-function filterPets() {
+export function filterPets() {
     const selectedType = document.getElementById('pet-type-filter').value;
 
     let filteredPets = [];
@@ -60,6 +72,9 @@ function filterPets() {
     displayPets(filteredPets);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    loadPets();
+document.addEventListener("DOMContentLoaded", () => {
+    const filterSelect = document.getElementById("pet-type-filter");
+    if (filterSelect) {
+        filterSelect.addEventListener("change", filterPets);
+    }
 });

@@ -15,10 +15,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/adopt-large.css">
     <link rel="stylesheet" href="styles/adopt-small.css">
-    <script src="scripts/footer.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/adopt-cards.js" defer></script>
-    <script src="scripts/requirements.js" defer></script>
+    <script type="module" src="scripts/index.js"></script>
 
     <link rel="icon" href="images/pwhm.ico">
 
@@ -49,7 +46,7 @@
         <h1>🐾 Say "Hi" to our pets! 🐾</h1>
         <div class="filter-container">
             <label for="pet-type-filter">Filter by pet type:</label>
-            <select id="pet-type-filter" onchange="filterPets()">
+            <select id="pet-type-filter"
                 <option value="all">All Pets</option>
             </select>
         </div>

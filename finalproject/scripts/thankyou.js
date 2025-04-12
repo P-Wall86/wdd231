@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const title = document.getElementById("thankTitle");
     const message = document.getElementById("thankMessage");
     const infoBox = document.getElementById("submittedInfo");
+    const confirmationBlocks = document.querySelectorAll(".confirmation-text");
 
     if (data && data.formType === "vet") {
         title.textContent = "Thanks for Joining Us!";
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         title.textContent = "Oops!";
         message.textContent = "No form data was found. Please go back and try again.";
         infoBox.innerHTML = "";
-        document.querySelector(".confirmation-text").style.display = "none";
+
+        confirmationBlocks.forEach(el => el.style.display = "none");
     }
 });

@@ -329,7 +329,6 @@ ul.links a:hover {
     flex: 1 1 250px;
     text-align: center;
     font-family: var(--primary-font);
-    background-color: var();
 }
 
 .cta-left h2 {

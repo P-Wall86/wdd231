@@ -377,10 +377,13 @@ span.close-button {
 }
 
 .resource-links a {
+    display: block;
     color: var(--primary);
     text-decoration: none;
+    font-size: 1.1rem;
     font-weight: 500;
     font-family: var(--primary-font);
+    margin-bottom: 1rem;
 }
 
 .resource-links a:hover {
